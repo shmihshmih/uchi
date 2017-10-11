@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Let's teach summ functions, guys!</title>
+</head>
+<body>
+  <h1>Hello, friend! I am glad to see you!</h1>
+  <h2>Let's teach it!</h2>
+  <h1><span id="first-term"></span> + <span id="second-term"></span> = <input readonly onkeyup="summInputValChange();" id="summ-of-two-terms" type="text"></h1>
+  <div id="img-block">
+    <div id="first-input-block">
+      <input id="first-term-input" onkeyup="firstTermKeyUp(this.value)" type="text">
+      <svg width="875px" height="100px">
+        <path id="first-term-path" fill="none" stroke="red" stroke-width="1" d="M0,70 C55,5 100,55 781,70" />
+      </svg>
+      <span id="first-arrow-span" class="arr"></span>
+    </div>
+    <div id="second-input-block">
+      <input id="second-term-input" onkeyup="secondTermKeyUp(this.value)" type="text">
+      <svg width="875px" height="100px">
+        <path id="second-term-path" fill="none" stroke="red" stroke-width="1" d="M0,70 C55,5 100,55 120,70" />
+      </svg>
+      <span id="second-arrow-span" class="arr"></span>
+    </div>
+    <img id="number-line" src="img/sprite.png" alt="numberline">
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
